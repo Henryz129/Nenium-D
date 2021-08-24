@@ -1,0 +1,411 @@
+:root{
+
+  --dark30: #000000;
+  --purple20:#5551FF;
+  --gray10:#545454;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+
+/*                                    SECCION DE HEADER */
+.hero
+{
+  background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url(../images/patron.png);
+block-size: 350px;
+}
+
+header {
+  font-size: 14px;
+  /* width: 208px; */
+  position: absolute;
+  /* top: 64px; */
+  inset-block-start: 0;
+  /* right: -232px; */
+  inset-inline-end: -250px;
+  /* z-index: 1; */
+  /* bottom: 0; */
+  /* top: 390px; */
+ /* background: green; */
+  /* margin-block-end: 16px; */
+  /* width: 188px; */
+  /* border: 1px solid green; */
+  /* color: red; */
+  inline-size: 208px;
+}
+
+header a
+{
+  color: var(--dark30);
+  text-decoration: none;
+}
+
+header a:hover
+{
+  color: var(--gray10);
+
+}
+
+header li{
+  margin-block-end: 16px;
+  /* margin-bottom: 16px; */
+  /* line-height: 16px; */
+}
+
+.header{
+  position: sticky;
+  /* top: 0; */
+  inset-block-start: -45px;
+
+}
+
+.header-content
+{
+  position: relative;
+  inset-block-start: 65px;
+}
+
+.nameStrong
+{
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.nameGray
+{
+  color: var(--gray10);
+  font-weight: bold;
+  line-height: 24px;
+}
+
+
+
+/* .colorPurple a{
+  background: var(--purple20);
+  font-size: 1em;
+  color: white;
+} */
+
+/* header li:first-child
+{
+  color: green;
+  background: var(--purple20);
+} */
+
+/* .header li:nth-of-type(1)
+{
+  background: #545454;
+} */
+
+
+header ol:first-of-type{
+  background: var(--purple20);
+  /* position: relative; */
+}
+
+/*
+LEDA COLOR A LOS NUM D LISTA
+.colorPurple ol,li{
+color: white;
+} */
+
+
+
+/*                                      GENERALES HS,P.. ETCS */
+p
+{
+  color: var(--gray10);
+  font-size: 16px;
+}
+
+h1{
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+  /* border: 1px solid red; */
+}
+
+h2
+{
+  font-size: 32px;
+  font-weight: normal;
+  margin-block-start: 64px;
+  margin-block-end: 40px;
+
+}
+
+h3
+{
+  font-size: 24px;
+  font-weight: normal;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.section-content img{
+margin-block-start: 40px;
+display: block;
+margin: auto;
+max-inline-size: 100%;
+}
+
+.images {
+  /* display: block; */
+  /* text-align: center; */
+}
+
+.section-content
+{
+  counter-reset: titleList;
+  position: relative;
+  /* margin: auto; */
+  text-align: center;
+
+  /* bottom: 40px; */
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::before{
+  content: counter(titleList) ". ";
+
+}
+
+::after{
+  content: '';
+
+}
+
+.modelodeCaja
+{
+  position: relative;
+  /* border: 1px solid red; */
+  margin-top:90px
+}
+
+
+/*                                        SECCION DE SETUP */
+.textMark
+{
+  color: var(--purple20);
+}
+
+/* blockquote::before
+{
+  content: '';
+  width: 4px;
+  height: 80px;
+  display: inline-block;
+  background: red;
+  position: relative;
+  bottom: 80px;
+  right: 16px;
+} */
+
+
+hr
+{
+  margin-block: 40px;
+  /* RESIMIDO
+  margin-block-start: 64px;
+  margin-block-end: 64px; */
+}
+
+blockquote{
+  font-size: 24px;
+  margin-block-start: 64px;
+  margin-block-end: 64px;
+  margin-inline-start: 0;
+  padding-inline-start: 16px;
+  border-left: 4px solid var(--purple20);
+  line-height: 24px;
+/* border: 1px solid red; */
+  /* font-size: 100px !important; */
+}
+
+blockquote p{
+  font-size: 24px;
+  text-align: left;
+  /* text-align: center; */
+}
+
+blockquote span{
+}
+
+blockquote span::before
+{
+  content: '-';
+}
+
+
+/*                                      SECCION DE CONCEPTOS */
+.textQuote p{
+  color: var(--dark30);
+}
+
+pre {
+  font-family: 'Rubik', sans-serif;
+  border: 8px solid var(--purple20);
+  border-radius: 8px;
+  overflow: auto;
+  box-shadow: -10px 10px 0px 0px #ABAAF6;
+  /* margin-left: 20px; */
+  /* padding: 40px 40px; */
+  padding-block: 40px;
+  padding-inline: 40px;
+  line-height: 24px;
+  text-align: left;
+
+}
+
+/*                                   SECCION FINAL MODELO DE CAJA */
+.modelodeCaja ol,ul{
+  color: var(--gray10);
+}
+.modelodeCaja ul li::marker {
+  color: var(--purple20);
+  font-size: 1em;
+}
+
+.modelodeCaja ul li{
+  /* line-height: 16px; */
+  margin-bottom: 16px;
+  /* background: red; */
+}
+
+.modelodeCaja ol li
+{
+  line-height: 24px;
+}
+
+.modelodeCaja
+{
+  text-align: left;
+
+}
+
+
+/*                                    TECNICA DE WRAPPER */
+.main {
+  /* border: 1px solid red; */
+  /* background: purple; */
+}
+
+.wrapper{
+  margin: 0 auto;
+  /* QUE LAS LETRAS SE ENCOJAN Y SE PUEDA LEER */
+  max-inline-size: 902px;
+
+}
+
+.section-content {
+  padding-inline: 16px;
+/* background: blue; */
+/* border: 1px solid red; */
+}
+
+
+
+.slider{
+/* border: 1px solid red; */
+}
+
+.slider-container {
+  /* block-size: 100px; */
+display: block;
+overflow: auto;
+scroll-behavior: smooth;
+white-space: nowrap;
+font-size: 0;
+/* border: 1px solid blue; */
+}
+
+.video {
+/* border: 1px solid blue; */
+  margin: 0;
+  display: inline-block;
+  inline-size: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet
+{
+block-size: 15px;
+inline-size: 15px;
+background:var(--purple20);
+display: inline-block;
+border-radius: 50%;
+}
+
+.slider-bullet-list
+{
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet-color
+{
+block-size: 15px;
+inline-size: 15px;
+background: rgba(142, 45, 226, 0.5);;
+display: inline-block;
+border-radius: 50%;
+}
+
+.form-section
+{
+  /* position: absolute; */
+}
+
+.form input{
+  inline-size: 30%;
+  border: 1px solid var(--dark30);
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  font-size: 16px;
+  display: inline-block;
+  margin-inline-start: 16px;
+  margin-block-end: 16px;
+}
+
+
+.form input::-webkit-input-placeholder{
+color: var(--dark30)
+}
+
+.form [type="submit"]{
+  inline-size: 15%;
+  block-size: 30%;
+  margin-inline-start: -70px;
+  background: var(--purple20);
+  border: none;
+  right: 330px;
+  border: 1px solid var(--purple20);
+
+}
+
+
+
+
+@media screen and (min-width: 700px)
+{
+ body {
+
+    /* background: red; */
+  }
+}
